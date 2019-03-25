@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name= "description" content= " ">
+        <meta name= "keywords" content=" ">
+        <!--- script inladen -->
+        <!-- css inladen -->
+    </head>
+    <body>
+        <header>
+            <h1>Booktopia</h1>
+            <form id="search">
+                <input type="text" placeholder="Search by name or title" name="Search">
+                <button type="submit">Search</button>
+            </form>
+
+        </header>
+
+        <section>
+            <div id="sortBar">
+                <label for="sortBy">Sort by:</label>
+                <select id="sort" onchange="sortBy"+this.value]() name="sort">
+                    <option value="Author" selected>Author</option>
+                    <option value="Price">Price</option>
+                    <option value="Genre">Genre</option>
+                    <option value="Publisher">Publisher</option>
+                </select>
+            </div>
+
+        </section>
+
+        <footer>
+
+        </footer>
+
+
+    </body>
+</html>
