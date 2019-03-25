@@ -12,7 +12,15 @@
         <header>
             <h1>Booktopia</h1>
             <form id="search">
-                <input type="text" placeholder="Search by name or title" name="Search">
+                <input type="text" placeholder="Search books by name or title" name="Search">
+                Price range from:
+                <input class="priceFrom" type="number" value="0" autocomplete="off" name="from">
+                to
+                <input class="priceTo" type="number" value="27.5" autocomplete="off" name="to">
+                <select id="genreFilter" name="genreFilter">    
+                </select>
+                <select id="publischerFilter" name="publisherFilter">  
+                </select>
                 <button type="submit">Search</button>
             </form>
 
@@ -24,8 +32,7 @@
                 <select id="sort" onchange="sortBy"+this.value]() name="sort">
                     <option value="Author" selected>Author</option>
                     <option value="Price">Price</option>
-                    <option value="Genre">Genre</option>
-                    <option value="Publisher">Publisher</option>
+                    <option value="Title">Title</option>
                 </select>
             </div>
 
