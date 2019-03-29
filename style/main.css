@@ -1,0 +1,228 @@
+/* Stylesheet for Mobile: screen-width < 750 pixels. All styles simplified.
+ Some images made unavailable */
+@media only screen and (max-width: 420px)
+{
+   form input[type=text] 
+   {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: auto;
+    background: #f1f1f1;
+  }
+
+  form button 
+  {
+    float: left;
+    width: auto;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  header hr
+  {
+    position: absolute;
+    top: 20%;
+    width: 95%;
+  }
+
+  footer
+  {
+    position: absolute;
+    bottom:0px;
+  }
+
+  footer img
+  {
+    float: right;
+    width: 60%;
+    position: relative;
+  }
+
+  footer p
+  {
+    font-size: 70%;
+  }
+
+
+}
+
+
+/* Stylesheet for Desktop: screen-width > 750 pixels*/
+@media only screen and (min-width: 420px)
+{
+  h1
+  {
+    text-align: center;
+    font-size: 60px;
+    clear: both;
+  }
+
+  #search input[type=text] 
+  {
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 30%;
+    background: #f1f1f1;
+    margin:0px;
+  }
+
+  #search button 
+  {
+    text-align:center;
+    margin: 0px;
+    width: 8%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+
+  #search 
+  {
+    min-width: 900px;
+    margin:0px;
+    text-align: center;
+  }
+
+  #search button:hover {
+    background: #0b7dda;
+  }
+
+  #search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #login,#register 
+ { 
+    background-color: rgb(222, 226, 232,0.7);
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+ }
+
+  #login fieldset, #register fieldset
+ {
+    margin-bottom: 40px;
+ }
+
+  #login input, #register input
+ {
+    background-color: rgb(240,240,240);
+    border:none;
+    font-size: 20px;
+    height: auto;
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+ }
+
+  #login legend, #register legend
+ {
+    font-size: 20px;
+    display: inline;
+ }
+
+ #login legend span, #register legend span
+ {
+    text-align: center;
+    color:white;
+    display: inline-block;
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #2196F3;
+    line-height: 40px;
+    margin-right: 5px;
+ }
+
+ #login input:focus, #register input:focus, textarea:focus
+ {
+    box-shadow: 0 0 5px rgba(81,203,238,1);
+    border: 1px solid rgba(81,203,238,1);
+ }
+
+ #login button, #register button
+ {
+    padding: 20px;
+    border: 1px solid grey;
+    background: #2196F3;
+    color: white;
+ }
+
+#login button:hover, #register button:hover {
+    background: #0b7dda;
+  }
+
+#login 
+{
+  display: none;
+}
+
+body.register div
+{
+  float: center;
+
+}
+
+.interface
+{
+  position:relative;
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  color: black;
+  height: 50px;
+}
+
+.interface p
+{
+
+  float: center;
+}
+
+.interface img
+{
+  float: center;
+  width: 30px;
+  height: 30px;
+}
+
+  footer
+  {   
+    clear: both;        
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+  }
+
+  footer img
+  {
+    position: relative;
+    float: right;
+    width: 337px;
+    height: 133px;
+  }
+
+  footer p
+  {
+    position: relative;
+    top:20px;
+  }
+
+}

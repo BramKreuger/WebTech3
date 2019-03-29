@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name= "description" content= " ">
+        <meta name= "keywords" content=" ">
+        <title> BestBookStore</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css"/>
+        <script type="text/javascript" src="code/script.js"></script>
+    </head>
+    <body class= "register">
+        <header>
+            <h1>BestBookStore</h1>
+            <div id="search">
+            <form>
+                <select>
+                    
+                </select>
+                <input type="text" placeholder="Search by name or title" name="Search">
+                <button method="" type="submit"> Search!</button>
+            </form>
+            <div>
+                <a class="interface" href="home.html"><p><img src="images/icons/home-button.svg">Home</p></a> 
+                <a class= "interface" href="register.html"><p><img src="images/icons/user-silhouette.svg">SignUp/LogIn</p></a>
+            </div>
+            <hr>
+        </header>
+        <section>
+                <form id=register method="POST">
+                    <h2> Registration Form </h2>
+                    <fieldset>
+                        <legend> <span>1</span> User Info</legend>
+                        <input type="text" name="fname" placeholder="First name">
+                        <input type="text" name="lname" placeholder="Last name">
+                    </fieldset>
+                    <fieldset>
+                        <legend> <span>2</span> Login Info</legend>
+                        <input type="text" name="email" placeholder="email address for login">
+                        <input type="text" name="password" placeholder="password">
+                        <input type="text" name="password2" placeholder="repeat password">
+                    </fieldset>
+                    <button method="" type="submit"> Sign Up!</button>
+                    <p> Already have an account? <a onclick="showLogin()" id="login_btn" href="#">Login!</a> </p>
+                </form>
+
+                <form id=login method="POST">
+                    <h2> Provide Login Info </h2>
+                    <fieldset>
+                        <legend> <span>1</span> </legend>
+                        <input type="text" name="email" placeholder="registered email">
+                        <input type="text" name="password" placeholder="corresponding password">
+                    </fieldset>
+                    <button type="submit"> Login!</button>
+                    <p> Not registered yet? <a onclick="showRegister()" id="register_btn" href="#">Sign Up!</a> </p>
+                </form>
+        </section>
+        <footer>
+            <hr>
+            <img src="images/logos/UU_logo_EN_BLACK.png" alt="Logo of Utrecht University">
+            <p>
+                Created by: Daniël Bezema, Bram Kreuger en Nikki Evers.<br> 
+                University Utrecht<br>
+                Webtechnology <br>
+                INFOB2WT 
+        </footer>
+    </body>
+</html>
