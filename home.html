@@ -7,22 +7,48 @@
         <meta name= "keywords" content=" ">
         <title> BestBookStore</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
-        <script type="text/javascript" src="javascripts/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="home.js"></script>
     </head>
     <body class= "home">
         <header>
             <h1>BestBookStore</h1>
             <div id="search">
             <form>
-                <input type="text" placeholder="Search by name or title" name="Search" value="">
+                <input type="text" placeholder="Search by author" name="Search" value="">
+                <input type="text" placeholder="Search by title" name="Search" value="">
                 <button onclick="ajaxSearch(this.input);" type="submit"> Search!</button>
+                <input id="toggle" type="checkbox" checked>
+                <label for="toggle">Refine Search</label>
+                <div id="expand">
+                    <section>
+                        <form id="refine">
+                            Price from:
+                            <input class="priceFrom" type="number" value="0" autocomplete="off" name="from">
+                            to:
+                            <input class="priceTo" type="number" value="27.5" autocomplete="off" name="to">
+                            Genre:
+                            <select multiple>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                        </form>
+                    </section>
+                </div>
             </form>
                 <a class="interface" href="home.html"><p><img src="images/icons/home-button.svg">Home</p></a> 
                 <a class= "interface" href="register.html"><p><img src="images/icons/user-silhouette.svg">SignUp/LogIn</p></a>
             </div>
         </header>
         <hr>
-        <aside class="filteroptions">
+        <!---<aside class="filteroptions">
             <h2>Filter books displayed:</h2>
             <h3>Genre</h3>
             <div>
@@ -103,7 +129,7 @@
             books <br>
             BOOKS <br>
             books <br>
-        </section>
+        </section> --->
 
         <footer>
             <hr>
