@@ -1,22 +1,17 @@
 {
-  "name": "webtech3",
-  "version": "1.0.0",
-  "description": "Webtech opdracht 3",
-  "main": "main.js",
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BramKreuger/WebTech3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BramKreuger/WebTech3/issues"
-  },
-  "homepage": "https://github.com/BramKreuger/WebTech3#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "sqlite3": "^4.0.6"
   }
 }
